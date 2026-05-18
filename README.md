@@ -6,7 +6,7 @@ Free web-cam recorder application. An experiment in the use of AI in coding.
 I am an engineer and have been in the automotive engineering industry for over 40 years, my background is in electronic engineering (Loughborough University, UK, many moons ago!).
 My main area of expertise is in automation and the use of industrial PLC's. I have seen the development of the modern day pc from its early days of the 8086 and original IBM XT models to what it is now.
 I am conversant in many computer languages but do not ascribe to any one in particular, my knowledge is more on underlying programming concepts.
-I am a trouble-shooter and would probably describe myself as more of a controls/systems engineer rather than en electronics engineer, my mode of operandus is to use the most appropriate tool, including programming languages, to effect a solution to the problem I am working on.
+I am a trouble-shooter and would probably describe myself as more of a controls/systems engineer rather than an electronics engineer, my mode of operandus is to use the most appropriate tool, including programming languages, to effect a solution to the problem I am working on.
 
 This project came about after a conversation with my sons, one a medical doctor and the other researching a Phd on mathematical proof theory (so you can imagine how high-brow this would have been), on how AI is developing and the practical uses of the various engines available (applications that are not just directed at the social media genre).
 In my opinion the biggest leap and of most practical impact is in the field of medicine. Let's hope AI can help us to eliminate cancer, parkinsons, dementia,.... the list is long.
