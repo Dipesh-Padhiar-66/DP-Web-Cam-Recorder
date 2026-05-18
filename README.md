@@ -46,4 +46,4 @@ ChatGPT instructed me on the use of Pyinstaller to create a single .exe files th
 Other than using GuiPy and editing, copying and pasting, at no point did I do any coding.
 I learned that to improve ChatGPT responses you must give as much information as possible, but you must also be very specific when asking for what you want.
 
-The experiment was a success
+The experiment was a success. I've included the .py script that you can study and use (under the GPL
