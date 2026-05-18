@@ -1,7 +1,7 @@
 # DP-Web-Cam-Recorder
 Free web-cam recorder application. An experiment in the use of AI in coding.
 
-<img width="350" height="402" alt="Image" src="https://github.com/user-attachments/assets/bbe96b11-f6d0-4656-a96e-3308d028dfd7" />
+<img width="520" height="600" alt="Image" src="https://github.com/user-attachments/assets/af9f05df-16d2-4ebd-b777-d2b5141f24f6" />
 
 I am an engineer and have been in the automotive engineering industry for over 40 years, my background is in electronic engineering (Loughborough University, UK, many moons ago!).
 My main area of expertise is in automation and the use of industrial PLC's. I have seen the development of the modern day pc from its early days of the 8086 and original IBM XT models to what it is now.
