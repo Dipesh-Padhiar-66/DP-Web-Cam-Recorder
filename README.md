@@ -40,3 +40,5 @@ I ended up with a web-cam recorder that has the following features:
   - Recording quality selection.
 
 ChatGPT instructed me on the use of Pyinstaller to create a single .exe files that would include all necessary modules (see Make.bat for the automated Pyinstaller command).
+
+Other than suing GuiPy and editing, copying and pasting, at no point did I do any coding.
