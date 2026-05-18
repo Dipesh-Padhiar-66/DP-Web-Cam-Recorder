@@ -1,5 +1,5 @@
 # DP-Web-Cam-Recorder
-Free web-cam recorder app. An experiment in the use of AI in coding.
+Free web-cam recorder application. An experiment in the use of AI in coding.
 
 I am an engineer and have been in the automotive engineering industry for over 40 years, my background is in electronic engineering (Loughborough University, UK, many moons ago!).
 My main area of expertise is in automation and the use of industrial PLC's. I have seen the development of the modern day pc from its early days of the 8086 and original IBM XT models to what it is now.
@@ -12,7 +12,7 @@ In my opinion the biggest leap and of most practical impact is in the field of m
 One of the things discussed during our conversation was that the next step in software development would be where you would just ask the AI to give you a routine to slot in to your program.
 This got me thinking on how far this could be taken with todays AI.
 
-A friend of mine had commented once on how useless he found the MS offerings for a web-cam and how the other offerings on the internet were either not suitable or functional and described them as either 'crapware' or 'bloatware'.
+A friend of mine had commented once on how useless he found the MS offerings for a web-cam as they did not have a timestamp feature, and how the other offerings on the internet were either not suitable or not fully functional and described them as either 'crapware' or 'bloatware'.
 Instead of jumping straight in and writing an application with my programming knowledge. I decided to try and write an application using AI exclusively to do the coding.
 
 For my experiment I decided to use ChatGPT.
@@ -41,9 +41,19 @@ I ended up with a web-cam recorder that has the following features:
   - ✔ Open save folder button
   - ✔ Standalone EXE support
 
-ChatGPT instructed me on the use of Pyinstaller to create a single .exe files that would include all necessary modules (see Make.bat for the automated Pyinstaller command).
+ChatGPT instructed me on the use of Pyinstaller to create a single .exe file that would include all necessary modules (see Make.bat for the automated Pyinstaller command).
 
-Other than using GuiPy and editing, copying and pasting, at no point did I do any coding.
 I learned that to improve ChatGPT responses you must give as much information as possible, but you must also be very specific when asking for what you want.
 
-The experiment was a success. I've included the .py script that you can study and use (under the GPL
+Other than using GuiPy and editing, copying and pasting, at no point did I do any coding.
+I've included the .py script so that you can study and use it (under the GPL 3.0 license).
+The Packages.txt file lists the Python packages/modules I have installed on my machine (you may not need all of them).
+The Make.bat file will create the single .exe file.
+
+There were many more suggestions for improving the program and extending it's features. However, I stopped at the point I did because I had proved the experiment was a success.
+It was a thoroughly enjoyable learning experience and I strongly urge you to give ChatGPT a go on your own project.
+
+I've released everything under the GPL license, free for everyone to use, just please keep to the 'freedom of knowledge' spirit by sharing and using to expand your own knowledge and giving me a thumbs up if you find this useful.
+
+Thanks,
+DP.
