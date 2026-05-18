@@ -31,14 +31,19 @@ At each stage I tested by running the script, and every fault or issue was fed b
 I also looked at some of the suggested features recommended by ChatGPT and asked to have them included.
 
 I ended up with a web-cam recorder that has the following features:
-  - Live preview
-  - Time stamp overlay
-  - Blinking 'REC' message
-  - Auto file split every 30 mins
-  - Savefile auto naming
-  - Camera selection
-  - Recording quality selection.
+  - ✔ Live webcam preview
+  - ✔ H.264 recording
+  - ✔ Multi-camera support
+  - ✔ Timestamp overlay
+  - ✔ Blinking REC indicator
+  - ✔ Automatic file splitting
+  - ✔ Quality presets
+  - ✔ Open save folder button
+  - ✔ Standalone EXE support
 
 ChatGPT instructed me on the use of Pyinstaller to create a single .exe files that would include all necessary modules (see Make.bat for the automated Pyinstaller command).
 
-Other than suing GuiPy and editing, copying and pasting, at no point did I do any coding.
+Other than using GuiPy and editing, copying and pasting, at no point did I do any coding.
+I learned that to improve ChatGPT responses you must give as much information as possible, but you must also be very specific when asking for what you want.
+
+The experiment was a success
