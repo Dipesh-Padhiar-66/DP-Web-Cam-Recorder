@@ -38,6 +38,7 @@ I ended up with a web-cam recorder that has the following features:
   - ✔ H.264 recording
   - ✔ Multi-camera support
   - ✔ Timestamp overlay
+  - ✔ Mirror image support
   - ✔ Blinking REC indicator
   - ✔ Automatic file splitting
   - ✔ Quality presets
