@@ -70,6 +70,7 @@ class WebcamApp:
         self.output_dir = None
 
         self.quality_var = tk.StringVar(value="Medium")
+        self.mirror_var = tk.BooleanVar(value=True)
 
         # ===== CAMERA DETECTION =====
         self.available_cameras = self.get_available_cameras()
@@ -204,6 +205,22 @@ class WebcamApp:
             self.change_camera
         )
 
+        # ===== CAMERA MIRROR =====
+        self.mirror_checkbox = ttk.Checkbutton(
+            controls_frame,
+            text="Mirror Video",
+            variable=self.mirror_var
+        )
+
+        self.mirror_checkbox.grid(
+            row=1,
+            column=10,
+            padx=10,
+            columnspan=10,
+            sticky="w",
+            pady=(10, 5)
+        )
+
         # ===== STATUS FRAME =====
         status_frame = ttk.LabelFrame(
             main_frame,
@@ -327,7 +344,8 @@ class WebcamApp:
         ret, frame = self.cap.read()
 
         if ret:
-            frame = cv2.flip(frame, 1)
+            if self.mirror_var.get():
+                frame = cv2.flip(frame, 1)
 
             # ===== TIMESTAMP =====
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -375,6 +393,16 @@ class WebcamApp:
 
                 if elapsed >= self.segment_duration:
                     self.start_new_file()
+
+                if self.ffmpeg_process.poll() is not None:
+                    self.stop_recording()
+
+                    messagebox.showerror(
+                        "Recording Error",
+                        "FFmpeg terminated unexpectedly."
+                    )
+
+                    return
 
                 try:
                     self.ffmpeg_process.stdin.write(frame.tobytes())
@@ -509,6 +537,8 @@ class WebcamApp:
 
         command = [
             get_ffmpeg_path(),
+            "-hide_banner",
+            "-loglevel", "error",
             "-y",
             "-f", "rawvideo",
             "-vcodec", "rawvideo",
@@ -528,6 +558,8 @@ class WebcamApp:
             self.ffmpeg_process = subprocess.Popen(
                 command,
                 stdin=subprocess.PIPE,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
                 creationflags=subprocess.CREATE_NO_WINDOW
             )
 
