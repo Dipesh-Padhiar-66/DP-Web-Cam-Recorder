@@ -1,6 +1,6 @@
 # ===========================================#
 # This WebCam recording app was developed    #
-# by Dipesh Padhiar with the help of ChatGPT #
+# by Dipesh Padhiar with the help of Copilot #
 # April 2026                                 #
 # Built using Python script version 3.14.3   #
 # FFmpeg version N-123829 (8.1 Hoare)        #
@@ -229,9 +229,11 @@ class WebcamApp:
         )
         status_frame.pack(fill="x")
 
+        camera_fps = self.cap.get(cv2.CAP_PROP_FPS)
+
         self.status = ttk.Label(
             status_frame,
-            text="Ready"
+            text=f"Ready | Camera FPS: {camera_fps:.1f}"
         )
         self.status.pack(anchor="w", pady=2)
 
@@ -320,6 +322,11 @@ class WebcamApp:
         self.cap = cv2.VideoCapture(
             self.current_camera_index,
             cv2.CAP_DSHOW
+        )
+
+        fps = self.cap.get(cv2.CAP_PROP_FPS)
+        self.status.config(
+            text=f"Ready | Camera FPS: {fps:.1f}"
         )
 
         if not self.cap.isOpened():
@@ -544,7 +551,7 @@ class WebcamApp:
             "-vcodec", "rawvideo",
             "-pix_fmt", "bgr24",
             "-s", f"{width}x{height}",
-            "-r", "15",
+            "-r", "30",
             "-i", "-",
             "-c:v", "libx264",
             "-preset", "medium",
@@ -635,7 +642,7 @@ class WebcamApp:
             "- Timestamp overlay\n"
             "- Quality selection\n\n"
             "Developed by D. Padhiar\n"
-            "with the help of ChatGPT\n\n"
+            "with the help of CoPilot\n\n"
             "Built with Python, OpenCV, and FFmpeg\n"
             "Using GuiPy IDE"
         )
