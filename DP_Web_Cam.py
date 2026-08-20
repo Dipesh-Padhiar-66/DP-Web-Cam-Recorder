@@ -1,6 +1,6 @@
 # ===========================================#
 # This WebCam recording app was developed    #
-# by Dipesh Padhiar with the help of Copilot #
+# by Dipesh Padhiar with the help of ChatGPT #
 # April 2026                                 #
 # Built using Python script version 3.14.3   #
 # FFmpeg version N-123829 (8.1 Hoare)        #
